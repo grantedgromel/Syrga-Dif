@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jasmine &amp; Benoît — Syrga Dif</title>
+<meta name="description" content="Jasmine &amp; Benoît — mariage photographié par Syrga Dif.">
+<link rel="icon" type="image/png" href="../img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script>window.PAGE_I18N={ fr:{ kicker:"Mariage", photos:"photographies", backLabel:"Retour au portfolio" }, en:{ kicker:"Wedding", photos:"photographs", backLabel:"Back to portfolio" } };</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="../index.html" class="brand">Syrga Dif</a>
+    <nav class="nav-desktop">
+      <a class="navlink" data-k="navHome" href="../index.html">Accueil</a>
+      <a class="navlink" data-k="navPortfolio" href="../weddings.html" aria-current="page">Portfolio</a>
+      <a class="navlink" data-k="navAbout" href="../about.html">À propos</a>
+      <a class="navlink" data-k="navTravels" href="../voyages.html">Voyages</a>
+      <a class="navlink" data-k="navInfo" href="../faq.html">Info</a>
+      <a class="navlink" data-k="navContact" href="../contact.html">Contact</a>
+      <div class="lang">
+        <button type="button" class="lang-btn" data-lang="fr" onclick="setLang('fr')" aria-label="Français">FR</button>
+        <span class="lang__sep">/</span>
+        <button type="button" class="lang-btn" data-lang="en" onclick="setLang('en')" aria-label="English">EN</button>
+      </div>
+    </nav>
+    <button type="button" id="navBurger" class="nav-burger" onclick="openMenu()" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu" data-k-aria="menuLabel"><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__top">
+    <span class="mobile-menu__title">Syrga Dif</span>
+    <button type="button" class="mobile-menu__close" onclick="closeMenu()" aria-label="Fermer" data-k-aria="closeLabel">&#10005;</button>
+  </div>
+  <nav>
+    <a data-k="navHome" href="../index.html" onclick="closeMenu()">Accueil</a>
+    <a data-k="navPortfolio" href="../weddings.html" onclick="closeMenu()" aria-current="page">Portfolio</a>
+    <a data-k="navAbout" href="../about.html" onclick="closeMenu()">À propos</a>
+    <a data-k="navTravels" href="../voyages.html" onclick="closeMenu()">Voyages</a>
+    <a data-k="navInfo" href="../faq.html" onclick="closeMenu()">Info</a>
+    <a data-k="navContact" href="../contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+  <div class="mobile-menu__lang">
+    <button type="button" class="lang-btn" data-lang="fr" onclick="setLang('fr')">Français</button>
+    <span class="lang__sep">/</span>
+    <button type="button" class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <img src="../jasmine-benoit/001-5c00a05cd31092d4faad129997b7a3ad.jpg" alt="" loading="eager">
+    <div class="page-hero__veil" aria-hidden="true"></div>
+    <div class="page-hero__inner">
+      <div class="eyebrow eyebrow--light" data-k="kicker">Mariage</div>
+      <h1>Jasmine &amp; Benoît</h1>
+      <div class="eyebrow eyebrow--light" style="margin-top:1em;">53 <span data-k="photos">photographies</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="gallery-grid">
+      <figure><img loading="lazy" src="../jasmine-benoit/001-5c00a05cd31092d4faad129997b7a3ad.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/002-syrga_dif-6d6dc12e6f488db4eee1e01a72a78787.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/003-syrga_dif-7001ced5945a87f6fdb61ad29657d5dd.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/004-syrga_dif-590829a462cc3b45d56bd7f6279e13d9.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/005-syrga_dif-49a06f53e842a47687d30a3ed8d8f0b7.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/006-syrga_dif-9c8b8bc686423db5239323c5d38c6b63.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/007-syrga_dif-486b34a6e20b00dc325bc268c4aa907b.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/008-syrga_dif-96bff0cf684f5ccb639174188ba1d1a7.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/009-syrga_dif-f219e127f1b5620d29021ea117b25859.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/010-syrga_dif-6621c01f7aa93ac762d2c764214d1cc0.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/011-syrga_dif-e20a7b6fbcad5e2845b306ffc69f1d01.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/012-syrga_dif-43ea5f726232a3a18e44fc9ee7a1cbf4.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/013-syrga_dif-aa9be2e3d9d7b15200fa5d92d8f3eb87.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/014-syrga_dif-427eb8718d15e60b523579ac72d166f3.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/015-syrga_dif-3bf1526000ce683e545602ec32a69ae4.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/016-syrga_dif-280225f8d769d473fd65f21b27edf21e.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/017-syrga_dif-c7148b04c420705837a1be188d4fc80c.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/018-syrga_dif-917cd2498c5ed4517064ffeb929e20f8.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/019-syrga_dif-eb437c21a74d06ba5ee1fe600efed10b.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/020-syrga_dif-37c2fd8f6ff916dc4c6390d15bc3bdf7.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/021-syrga_dif-1a321d9b99316d55a259eed1683b1e75.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/022-syrga_dif-9b276a2ee114a5405e7285614d57d814.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/023-syrga_dif-55a73cdb5814e77478e8c37fc471696e.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/024-syrga_dif-8b5673a3b973c1fb1adfed1926f35e25.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/025-syrga_dif-825215b013b183d53a8c5ca4ca6539c1.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/026-syrga_dif-c33fe442ba46c28f5d65f90e756f49b3.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/027-syrga_dif-6b80b7e69734d5d502b3b4fe2e46bafc.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/028-syrga_dif-0915ad5ff0c06831de053088920e85b0.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/029-syrga_dif-8a66b1a1e5c930169e6fed253e38af3e.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/030-syrga_dif-0507c7d918174df22f12d63098a96668.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/031-syrga_dif-64f5558bfe3c9d58da24fb8da68d4110.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/032-syrga_dif-7fa60cd08218f37414565cdeddd3d7ad.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/033-syrga_dif-90eec1d0a224e08d14c62efd045d07e4.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/034-syrga_dif-c8d086941ee8deb2a46f189f0ca4654f.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/035-syrga_dif-fbf2607922315c3bc40da3594aa76320.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/036-syrga_dif-8027eea905c1690b79497ae414367916.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/037-syrga_dif-1575772eab8854bad3a14272b7495ff0.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/038-syrga_dif-411e40d06ef456f8876ec0bf6c061e76.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/039-syrga_dif-cb47f3693406c8b865edfa4428b8d8d6.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/040-syrga_dif-edc246cfb1630321f7283a79ad562697.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/041-syrga_dif-6aa5abc6a5da612bf528ebff46bdeb08.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/042-syrga_dif-53e918ab58d908986855fe1e646b3349.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/043-syrga_dif-de0c0962d87063b080f0702e7a77ef5f.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/044-syrga_dif-1f84f2996a8bba5fe651c8d14f91a885.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/045-syrga_dif-25552b4d9059848ceba351cca7a1053b.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/046-syrga_dif-3492f2fd86b3b13828434bc8faf3f899.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/047-syrga_dif-8c54afb0c426fee8a02f344f61802436.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/048-syrga_dif-fb5968c853552486347d17dec9bababf.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/049-syrga_dif-cb0893199d49480dfe425bbcc13b517c.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/050-syrga_dif-2045ed40343ea15c5f5b07a0d7fda742.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/051-syrga_dif-e7dc15e5c58065c8fb8657b42a393a45.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/052-syrga_dif-ee4ffe1c07ca8c93743cc47baf5eb424.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      <figure><img loading="lazy" src="../jasmine-benoit/053-syrga_dif-38f58ab2c900346061c11a1a5b78a562.jpg" alt="Jasmine &amp; Benoît — Syrga Dif"></figure>
+      </div>
+      <div class="center" style="margin-top:clamp(40px,6vw,72px);">
+        <a class="arrowlink" data-k="backLabel" href="../weddings.html">Retour au portfolio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="lb" id="lightbox" aria-hidden="true">
+  <button type="button" class="lb__btn lb__close" data-k-aria="lbClose" aria-label="Fermer">&#10005;</button>
+  <button type="button" class="lb__btn lb__prev" data-k-aria="lbPrev" aria-label="Précédent">&#8249;</button>
+  <img class="lb__img" src="" alt="">
+  <button type="button" class="lb__btn lb__next" data-k-aria="lbNext" aria-label="Suivant">&#8250;</button>
+  <div class="lb__count" aria-live="polite"></div>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__cols">
+      <div style="flex:1 1 280px;">
+        <div class="site-footer__brand">Syrga Dif</div>
+        <p class="site-footer__tag" data-k="footerTagline">Photographe de mariage en France et à l'étranger.</p>
+      </div>
+      <div style="display:flex;gap:clamp(36px,5vw,72px);flex-wrap:wrap;">
+        <div class="site-footer__group">
+          <a class="footlink" data-k="navHome" href="../index.html">Accueil</a>
+          <a class="footlink" data-k="navPortfolio" href="../weddings.html">Portfolio</a>
+          <a class="footlink" data-k="navAbout" href="../about.html">À propos</a>
+          <a class="footlink" data-k="navContact" href="../contact.html">Contact</a>
+        </div>
+        <div class="site-footer__group">
+          <a class="footlink" href="https://www.instagram.com/syrga.dif/" target="_blank" rel="noopener">Instagram</a>
+          <a class="footlink" href="https://www.facebook.com/syrga.dif/" target="_blank" rel="noopener">Facebook</a>
+          <a class="footlink" href="https://www.tiktok.com/@syrgadif" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bar">Copyright 2021-2025 &#169; Syrga Dif. <span data-k="footerRights">Tous droits réservés.</span></div>
+  </div>
+</footer>
+<div class="grain" aria-hidden="true"></div>
+<script src="../assets/site.js"></script>
+</body>
+</html>

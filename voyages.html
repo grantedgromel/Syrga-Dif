@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voyages — Syrga Dif | Évasion & inspiration</title>
+<meta name="description" content="Carnets de voyage de Syrga Dif — évasion, inspiration et lumière, de l'Égypte aux horizons lointains.">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>window.PAGE_I18N={
+  fr:{
+    vKicker:"Évasion & inspiration",
+    vTitle:"Voyages",
+    vIntro:"Rien de tel qu'un voyage pour se ressourcer, découvrir de nouveaux horizons et capturer des instants uniques. À travers chaque destination, je cherche la lumière, les atmosphères et les émotions les plus sincères.",
+    egKicker:"Carnet de voyage",
+    egTitle:"Égypte",
+    egText:"L'Égypte m'a tout pris : mon souffle, mes repères, mon cœur. Du Caire aux pyramides et au Sphinx, du Nil à Louxor, de Karnak à la Vallée des Rois, du désert du Fayoum au village de Tunis et à Wadi El-Hitan — la vallée des Baleines.",
+    egQuote:"Allez en Égypte. Et laissez-vous bouleverser.",
+    egCta:"Découvrir le carnet"
+  },
+  en:{
+    vKicker:"Escape & inspiration",
+    vTitle:"Travels",
+    vIntro:"There's nothing like a journey to recharge, discover new horizons and capture singular moments. In every destination I look for light, atmosphere and the most sincere emotions.",
+    egKicker:"Travel diary",
+    egTitle:"Egypt",
+    egText:"Egypt took everything from me: my breath, my bearings, my heart. From Cairo to the pyramids and the Sphinx, from the Nile to Luxor, from Karnak to the Valley of the Kings, from the Fayoum desert to the village of Tunis and Wadi El-Hitan — the Valley of the Whales.",
+    egQuote:"Go to Egypt. And let it move you.",
+    egCta:"Explore the diary"
+  }
+};</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">Syrga Dif</a>
+    <nav class="nav-desktop">
+      <a class="navlink" data-k="navHome" href="index.html">Accueil</a>
+      <a class="navlink" data-k="navPortfolio" href="weddings.html">Portfolio</a>
+      <a class="navlink" data-k="navAbout" href="about.html">À propos</a>
+      <a class="navlink" data-k="navTravels" href="voyages.html" aria-current="page">Voyages</a>
+      <a class="navlink" data-k="navInfo" href="faq.html">Info</a>
+      <a class="navlink" data-k="navContact" href="contact.html">Contact</a>
+      <div class="lang">
+        <button type="button" class="lang-btn" data-lang="fr" onclick="setLang('fr')" aria-label="Français">FR</button>
+        <span class="lang__sep">/</span>
+        <button type="button" class="lang-btn" data-lang="en" onclick="setLang('en')" aria-label="English">EN</button>
+      </div>
+    </nav>
+    <button type="button" id="navBurger" class="nav-burger" onclick="openMenu()" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu" data-k-aria="menuLabel"><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__top">
+    <span class="mobile-menu__title">Syrga Dif</span>
+    <button type="button" class="mobile-menu__close" onclick="closeMenu()" aria-label="Fermer" data-k-aria="closeLabel">&#10005;</button>
+  </div>
+  <nav>
+    <a data-k="navHome" href="index.html" onclick="closeMenu()">Accueil</a>
+    <a data-k="navPortfolio" href="weddings.html" onclick="closeMenu()">Portfolio</a>
+    <a data-k="navAbout" href="about.html" onclick="closeMenu()">À propos</a>
+    <a data-k="navTravels" href="voyages.html" onclick="closeMenu()" aria-current="page">Voyages</a>
+    <a data-k="navInfo" href="faq.html" onclick="closeMenu()">Info</a>
+    <a data-k="navContact" href="contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+  <div class="mobile-menu__lang">
+    <button type="button" class="lang-btn" data-lang="fr" onclick="setLang('fr')">Français</button>
+    <span class="lang__sep">/</span>
+    <button type="button" class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <img src="voyages/001-syrga_dif-11c8d59d61fd9ed89dc9508ca77d6068.jpg" alt="" loading="eager">
+    <div class="page-hero__veil" aria-hidden="true"></div>
+    <div class="page-hero__inner">
+      <div class="eyebrow eyebrow--light" data-k="vKicker">Évasion & inspiration</div>
+      <h1 data-k="vTitle">Voyages</h1>
+    </div>
+  </section>
+
+  <section class="section center">
+    <div class="wrap">
+      <p class="h-display" style="font-style:italic;font-size:clamp(1.5rem,3vw,2.5rem);line-height:1.4;max-width:24ch;margin:0 auto;" data-k="vIntro">Rien de tel qu'un voyage pour se ressourcer, découvrir de nouveaux horizons et capturer des instants uniques. À travers chaque destination, je cherche la lumière, les atmosphères et les émotions les plus sincères.</p>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="wrap">
+      <div class="split">
+        <a class="split__media" href="galleries/egypte.html" style="display:block;text-decoration:none;">
+          <img src="Egypte/001-syrga_dif-294b7d1478c116b97dedc658a84ee199.jpg" alt="Égypte — Syrga Dif" style="aspect-ratio:4/5;">
+        </a>
+        <div>
+          <div class="eyebrow" data-k="egKicker">Carnet de voyage</div>
+          <h2 class="h-display" style="font-size:clamp(2.2rem,4.6vw,3.8rem);margin:.2em 0 0;" data-k="egTitle">Égypte</h2>
+          <p class="lede" style="margin-top:1.3em;" data-k="egText">L'Égypte m'a tout pris : mon souffle, mes repères, mon cœur. Du Caire aux pyramides et au Sphinx, du Nil à Louxor, de Karnak à la Vallée des Rois, du désert du Fayoum au village de Tunis et à Wadi El-Hitan — la vallée des Baleines.</p>
+          <p class="h-display" style="font-style:italic;font-size:clamp(1.2rem,1.8vw,1.5rem);line-height:1.5;color:var(--taupe);margin-top:1.1em;" data-k="egQuote">Allez en Égypte. Et laissez-vous bouleverser.</p>
+          <a class="arrowlink" style="margin-top:1.8em;" href="galleries/egypte.html"><span data-k="egCta">Découvrir le carnet</span> <span aria-hidden="true">&#8594;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__cols">
+      <div style="flex:1 1 280px;">
+        <div class="site-footer__brand">Syrga Dif</div>
+        <p class="site-footer__tag" data-k="footerTagline">Photographe de mariage en France et à l'étranger.</p>
+      </div>
+      <div style="display:flex;gap:clamp(36px,5vw,72px);flex-wrap:wrap;">
+        <div class="site-footer__group">
+          <a class="footlink" data-k="navHome" href="index.html">Accueil</a>
+          <a class="footlink" data-k="navPortfolio" href="weddings.html">Portfolio</a>
+          <a class="footlink" data-k="navAbout" href="about.html">À propos</a>
+          <a class="footlink" data-k="navContact" href="contact.html">Contact</a>
+        </div>
+        <div class="site-footer__group">
+          <a class="footlink" href="https://www.instagram.com/syrga.dif/" target="_blank" rel="noopener">Instagram</a>
+          <a class="footlink" href="https://www.facebook.com/syrga.dif/" target="_blank" rel="noopener">Facebook</a>
+          <a class="footlink" href="https://www.tiktok.com/@syrgadif" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bar">Copyright 2021-2025 &#169; Syrga Dif. <span data-k="footerRights">Tous droits réservés.</span></div>
+  </div>
+</footer>
+<div class="grain" aria-hidden="true"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

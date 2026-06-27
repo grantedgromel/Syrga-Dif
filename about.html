@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À propos — Syrga Dif | Wedding Photographer</title>
+<meta name="description" content="Syrga Dif — née à Bichkek, basée en France. Une approche naturelle et authentique de la photographie de mariage.">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>window.PAGE_I18N={
+  fr:{
+    aKicker:"Behind the Lens",
+    aTitle:"Salut ! Je suis Syrga",
+    aP1:"Je suis née à Bichkek, capitale du Kirghizistan. Mais le destin m'a amenée en France, où je vis depuis plus de 19 ans. Je parle kirghize, russe, français et anglais.",
+    aP2:"Je viens d'une famille d'artistes : une grand-mère peintre reconnue, une tante artisane, un père photographe et une mère chanteuse de musique folklorique. La photographie est pour moi le prolongement naturel de cet héritage créatif.",
+    aP3:"Mes racines nomades nourrissent ma passion du voyage et de la découverte. Je puise mon inspiration dans la beauté colorée du monde, au fil de nombreux périples — paysages variés, cultures multiples, communautés métissées.",
+    aQuote:"Je veux révéler à travers mes photos la beauté cachée en chacun.",
+    aP4:"Mon approche mêle photojournalisme esthétique et images artistiques, émotionnelles et sincères. Je travaille avec discrétion pour raconter l'histoire d'une famille, révéler les émotions, saisir la joie, déceler la complicité, célébrer les amitiés et l'amour.",
+    aCta:"Travaillons ensemble",
+    aSplitTitle:"Une approche naturelle & authentique",
+    aSplitText:"Des images lumineuses et élégantes, des compositions soignées et une attention particulière aux détails : je crois en une photographie de mariage vraie, qui vous ressemble.",
+    portraitAlt:"Syrga Dif, photographe de mariage"
+  },
+  en:{
+    aKicker:"Behind the Lens",
+    aTitle:"Hi, I'm Syrga",
+    aP1:"I was born in Bishkek, the capital of Kyrgyzstan. But fate brought me to France, where I have lived for more than 19 years. I speak Kyrgyz, Russian, French and English.",
+    aP2:"I come from a family of artists: a renowned painter grandmother, an artisan aunt, a photographer father and a folk-singer mother. Photography, for me, is the natural continuation of that creative heritage.",
+    aP3:"My nomadic roots fuel my love of travel and discovery. I draw inspiration from the world's colourful beauty across many journeys — varied landscapes, diverse cultures, mixed-heritage communities.",
+    aQuote:"I want to reveal, through my photos, the beauty hidden in everyone.",
+    aP4:"My approach blends aesthetic photojournalism with artistic, emotional and sincere imagery. I work discreetly to tell a family's story, reveal emotion, capture joy, uncover closeness, and celebrate friendship and love.",
+    aCta:"Let's work together",
+    aSplitTitle:"A natural & authentic approach",
+    aSplitText:"Luminous, elegant images, careful compositions and close attention to detail: I believe in true wedding photography that looks like you.",
+    portraitAlt:"Syrga Dif, wedding photographer"
+  }
+};</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">Syrga Dif</a>
+    <nav class="nav-desktop">
+      <a class="navlink" data-k="navHome" href="index.html">Accueil</a>
+      <a class="navlink" data-k="navPortfolio" href="weddings.html">Portfolio</a>
+      <a class="navlink" data-k="navAbout" href="about.html" aria-current="page">À propos</a>
+      <a class="navlink" data-k="navTravels" href="voyages.html">Voyages</a>
+      <a class="navlink" data-k="navInfo" href="faq.html">Info</a>
+      <a class="navlink" data-k="navContact" href="contact.html">Contact</a>
+      <div class="lang">
+        <button type="button" class="lang-btn" data-lang="fr" onclick="setLang('fr')" aria-label="Français">FR</button>
+        <span class="lang__sep">/</span>
+        <button type="button" class="lang-btn" data-lang="en" onclick="setLang('en')" aria-label="English">EN</button>
+      </div>
+    </nav>
+    <button type="button" id="navBurger" class="nav-burger" onclick="openMenu()" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu" data-k-aria="menuLabel"><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__top">
+    <span class="mobile-menu__title">Syrga Dif</span>
+    <button type="button" class="mobile-menu__close" onclick="closeMenu()" aria-label="Fermer" data-k-aria="closeLabel">&#10005;</button>
+  </div>
+  <nav>
+    <a data-k="navHome" href="index.html" onclick="closeMenu()">Accueil</a>
+    <a data-k="navPortfolio" href="weddings.html" onclick="closeMenu()">Portfolio</a>
+    <a data-k="navAbout" href="about.html" onclick="closeMenu()" aria-current="page">À propos</a>
+    <a data-k="navTravels" href="voyages.html" onclick="closeMenu()">Voyages</a>
+    <a data-k="navInfo" href="faq.html" onclick="closeMenu()">Info</a>
+    <a data-k="navContact" href="contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+  <div class="mobile-menu__lang">
+    <button type="button" class="lang-btn" data-lang="fr" onclick="setLang('fr')">Français</button>
+    <span class="lang__sep">/</span>
+    <button type="button" class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <img src="img/about/001.jpg" alt="" loading="eager">
+    <div class="page-hero__veil" aria-hidden="true"></div>
+    <div class="page-hero__inner">
+      <div class="eyebrow eyebrow--light" data-k="aKicker">Behind the Lens</div>
+      <h1 data-k="aTitle">Salut ! Je suis Syrga</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <div class="stack-sm" style="max-width:56ch;">
+            <p class="lede" data-k="aP1">Je suis née à Bichkek, capitale du Kirghizistan. Mais le destin m'a amenée en France, où je vis depuis plus de 19 ans. Je parle kirghize, russe, français et anglais.</p>
+            <p class="lede" data-k="aP2">Je viens d'une famille d'artistes : une grand-mère peintre reconnue, une tante artisane, un père photographe et une mère chanteuse de musique folklorique. La photographie est pour moi le prolongement naturel de cet héritage créatif.</p>
+            <p class="lede" data-k="aP3">Mes racines nomades nourrissent ma passion du voyage et de la découverte. Je puise mon inspiration dans la beauté colorée du monde, au fil de nombreux périples — paysages variés, cultures multiples, communautés métissées.</p>
+          </div>
+        </div>
+        <div class="split__media" style="max-width:480px;">
+          <img src="img/about/006.jpg" alt="Syrga Dif" style="aspect-ratio:4/5;" data-k-alt="portraitAlt">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream center">
+    <div class="wrap">
+      <p class="h-display" style="font-style:italic;font-size:clamp(1.7rem,3.6vw,3rem);line-height:1.36;max-width:20ch;margin:0 auto;" data-k="aQuote">Je veux révéler à travers mes photos la beauté cachée en chacun.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__media" style="max-width:480px;">
+          <img src="img/about/002.jpg" alt="" style="aspect-ratio:4/5;">
+        </div>
+        <div>
+          <div class="eyebrow" data-k="aKicker">Behind the Lens</div>
+          <h2 class="h-display" style="font-size:clamp(2rem,4.4vw,3.4rem);margin:.2em 0 0;" data-k="aSplitTitle">Une approche naturelle &amp; authentique</h2>
+          <p class="lede" style="margin-top:1.3em;" data-k="aSplitText">Des images lumineuses et élégantes, des compositions soignées et une attention particulière aux détails : je crois en une photographie de mariage vraie, qui vous ressemble.</p>
+          <p class="lede" style="margin-top:1.1em;" data-k="aP4">Mon approche mêle photojournalisme esthétique et images artistiques, émotionnelles et sincères. Je travaille avec discrétion pour raconter l'histoire d'une famille, révéler les émotions, saisir la joie, déceler la complicité, célébrer les amitiés et l'amour.</p>
+          <a class="btn" style="margin-top:2em;" href="contact.html" data-k="aCta">Travaillons ensemble</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__cols">
+      <div style="flex:1 1 280px;">
+        <div class="site-footer__brand">Syrga Dif</div>
+        <p class="site-footer__tag" data-k="footerTagline">Photographe de mariage en France et à l'étranger.</p>
+      </div>
+      <div style="display:flex;gap:clamp(36px,5vw,72px);flex-wrap:wrap;">
+        <div class="site-footer__group">
+          <a class="footlink" data-k="navHome" href="index.html">Accueil</a>
+          <a class="footlink" data-k="navPortfolio" href="weddings.html">Portfolio</a>
+          <a class="footlink" data-k="navAbout" href="about.html">À propos</a>
+          <a class="footlink" data-k="navContact" href="contact.html">Contact</a>
+        </div>
+        <div class="site-footer__group">
+          <a class="footlink" href="https://www.instagram.com/syrga.dif/" target="_blank" rel="noopener">Instagram</a>
+          <a class="footlink" href="https://www.facebook.com/syrga.dif/" target="_blank" rel="noopener">Facebook</a>
+          <a class="footlink" href="https://www.tiktok.com/@syrgadif" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bar">Copyright 2021-2025 &#169; Syrga Dif. <span data-k="footerRights">Tous droits réservés.</span></div>
+  </div>
+</footer>
+<div class="grain" aria-hidden="true"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Syrga Dif | Wedding Photographer</title>
+<meta name="description" content="Contactez Syrga Dif — mariages, destination weddings, elopements et séances. Basée à Grenoble, disponible partout en France et dans le monde.">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>window.PAGE_I18N={
+  fr:{
+    cKicker:"Contact",
+    cTitle:"Travaillons ensemble",
+    cIntro:"Je suis basée à Grenoble, mais je me déplace avec plaisir partout en France et dans le monde. Mariages, destination weddings, elopements, séances engagement, grossesse & naissance, famille — racontez-moi votre projet.",
+    lblName:"Nom & prénom",
+    lblPhone:"Téléphone",
+    lblEmail:"E-mail",
+    lblWedding:"Date & lieu de votre mariage",
+    lblInsta:"Votre compte Instagram",
+    lblSource:"Comment avez-vous connu mon travail ?",
+    lblMsg:"Racontez-moi tout sur votre journée de mariage",
+    send:"Envoyer",
+    cSocial:"Retrouvez-moi aussi sur les réseaux"
+  },
+  en:{
+    cKicker:"Contact",
+    cTitle:"Let's work together",
+    cIntro:"I'm based in Grenoble, but I happily travel all over France and around the world. Weddings, destination weddings, elopements, engagement sessions, maternity & newborn, family — tell me about your project.",
+    lblName:"Full name",
+    lblPhone:"Phone",
+    lblEmail:"E-mail",
+    lblWedding:"Date & location of your wedding",
+    lblInsta:"Your Instagram account",
+    lblSource:"How did you hear about my work?",
+    lblMsg:"Tell me all about your wedding day",
+    send:"Send",
+    cSocial:"Find me on social media too"
+  }
+};</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">Syrga Dif</a>
+    <nav class="nav-desktop">
+      <a class="navlink" data-k="navHome" href="index.html">Accueil</a>
+      <a class="navlink" data-k="navPortfolio" href="weddings.html">Portfolio</a>
+      <a class="navlink" data-k="navAbout" href="about.html">À propos</a>
+      <a class="navlink" data-k="navTravels" href="voyages.html">Voyages</a>
+      <a class="navlink" data-k="navInfo" href="faq.html">Info</a>
+      <a class="navlink" data-k="navContact" href="contact.html" aria-current="page">Contact</a>
+      <div class="lang">
+        <button type="button" class="lang-btn" data-lang="fr" onclick="setLang('fr')" aria-label="Français">FR</button>
+        <span class="lang__sep">/</span>
+        <button type="button" class="lang-btn" data-lang="en" onclick="setLang('en')" aria-label="English">EN</button>
+      </div>
+    </nav>
+    <button type="button" id="navBurger" class="nav-burger" onclick="openMenu()" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu" data-k-aria="menuLabel"><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__top">
+    <span class="mobile-menu__title">Syrga Dif</span>
+    <button type="button" class="mobile-menu__close" onclick="closeMenu()" aria-label="Fermer" data-k-aria="closeLabel">&#10005;</button>
+  </div>
+  <nav>
+    <a data-k="navHome" href="index.html" onclick="closeMenu()">Accueil</a>
+    <a data-k="navPortfolio" href="weddings.html" onclick="closeMenu()">Portfolio</a>
+    <a data-k="navAbout" href="about.html" onclick="closeMenu()">À propos</a>
+    <a data-k="navTravels" href="voyages.html" onclick="closeMenu()">Voyages</a>
+    <a data-k="navInfo" href="faq.html" onclick="closeMenu()">Info</a>
+    <a data-k="navContact" href="contact.html" onclick="closeMenu()" aria-current="page">Contact</a>
+  </nav>
+  <div class="mobile-menu__lang">
+    <button type="button" class="lang-btn" data-lang="fr" onclick="setLang('fr')">Français</button>
+    <span class="lang__sep">/</span>
+    <button type="button" class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <img src="img/contacts/001.jpg" alt="" loading="eager">
+    <div class="page-hero__veil" aria-hidden="true"></div>
+    <div class="page-hero__inner">
+      <div class="eyebrow eyebrow--light" data-k="cKicker">Contact</div>
+      <h1 data-k="cTitle">Travaillons ensemble</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="lede" style="max-width:60ch;" data-k="cIntro">Je suis basée à Grenoble, mais je me déplace avec plaisir partout en France et dans le monde. Mariages, destination weddings, elopements, séances engagement, grossesse &amp; naissance, famille — racontez-moi votre projet.</p>
+
+      <!-- To make this form send email, set action to your Formspree endpoint
+           (https://formspree.io/) or another static-form backend. -->
+      <form class="form" style="margin-top:clamp(36px,5vw,56px);" action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="row2">
+          <div class="field">
+            <label for="f-name" data-k="lblName">Nom & prénom</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-phone" data-k="lblPhone">Téléphone</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="f-email" data-k="lblEmail">E-mail</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-insta" data-k="lblInsta">Votre compte Instagram</label>
+            <input id="f-insta" name="instagram" type="text">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-wedding" data-k="lblWedding">Date & lieu de votre mariage</label>
+          <input id="f-wedding" name="wedding" type="text">
+        </div>
+        <div class="field">
+          <label for="f-source" data-k="lblSource">Comment avez-vous connu mon travail ?</label>
+          <input id="f-source" name="source" type="text">
+        </div>
+        <div class="field">
+          <label for="f-msg" data-k="lblMsg">Racontez-moi tout sur votre journée de mariage</label>
+          <textarea id="f-msg" name="message" rows="5"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn" data-k="send">Envoyer</button>
+        </div>
+      </form>
+
+      <div style="margin-top:clamp(40px,6vw,64px);">
+        <div class="eyebrow" data-k="cSocial">Retrouvez-moi aussi sur les réseaux</div>
+        <div style="display:flex;gap:28px;flex-wrap:wrap;margin-top:1em;">
+          <a class="arrowlink" href="https://www.instagram.com/syrga.dif/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">&#8594;</span></a>
+          <a class="arrowlink" href="https://www.facebook.com/syrga.dif/" target="_blank" rel="noopener">Facebook <span aria-hidden="true">&#8594;</span></a>
+          <a class="arrowlink" href="https://www.tiktok.com/@syrgadif" target="_blank" rel="noopener">TikTok <span aria-hidden="true">&#8594;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__cols">
+      <div style="flex:1 1 280px;">
+        <div class="site-footer__brand">Syrga Dif</div>
+        <p class="site-footer__tag" data-k="footerTagline">Photographe de mariage en France et à l'étranger.</p>
+      </div>
+      <div style="display:flex;gap:clamp(36px,5vw,72px);flex-wrap:wrap;">
+        <div class="site-footer__group">
+          <a class="footlink" data-k="navHome" href="index.html">Accueil</a>
+          <a class="footlink" data-k="navPortfolio" href="weddings.html">Portfolio</a>
+          <a class="footlink" data-k="navAbout" href="about.html">À propos</a>
+          <a class="footlink" data-k="navContact" href="contact.html">Contact</a>
+        </div>
+        <div class="site-footer__group">
+          <a class="footlink" href="https://www.instagram.com/syrga.dif/" target="_blank" rel="noopener">Instagram</a>
+          <a class="footlink" href="https://www.facebook.com/syrga.dif/" target="_blank" rel="noopener">Facebook</a>
+          <a class="footlink" href="https://www.tiktok.com/@syrgadif" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bar">Copyright 2021-2025 &#169; Syrga Dif. <span data-k="footerRights">Tous droits réservés.</span></div>
+  </div>
+</footer>
+<div class="grain" aria-hidden="true"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>
